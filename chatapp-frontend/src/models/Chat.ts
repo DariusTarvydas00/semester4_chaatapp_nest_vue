@@ -1,4 +1,4 @@
-export class Chat {
+export interface Chat {
   text: string;
   room: string;
 }
