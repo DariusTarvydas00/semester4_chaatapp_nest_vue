@@ -11,8 +11,7 @@ const userStore = UserStore();
     <RouterLink to="/createUser">Create User</RouterLink> |
     <RouterLink to="/chat">Chat</RouterLink>
     <span v-if="userStore.userName.length > 0">
-      | Logged in as: {{ userStore.userName }}</span
-    >
+      | Logged in as: {{ userStore.userName }}</span>
   </nav>
   <br />
   <RouterView />
