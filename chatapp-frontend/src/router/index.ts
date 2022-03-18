@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import WelcomePageLogin from "../views/WelcomePageLogin.vue";
 import ChatView from "../views/ChatView.vue";
-import CreateUser from "../views/CreateUser.vue";
+import WelcomePageRegister from "../views/WelcomePageRegister.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HomeView,
+      name: "WelcomePageLogin",
+      component: WelcomePageLogin,
     },
     {
       path: "/chat",
@@ -17,9 +17,9 @@ const router = createRouter({
       component: ChatView,
     },
     {
-      path: "/createUser",
-      name: "CreateUser",
-      component: CreateUser,
+      path: "/welcomePageRegister",
+      name: "WelcomePageRegister",
+      component: WelcomePageRegister,
     },
   ],
 });
