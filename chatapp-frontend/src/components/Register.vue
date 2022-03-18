@@ -52,7 +52,8 @@ const inputPassword = ref("");
 
 function handleCreateUser() {
   userStore.createUser(inputName.value, inputEmail.value, inputPassword.value);
-    router.push('/chat');
+  router.push('/chat');
+  console.log(userStore.loggedInUser)
 }
 
 </script>
