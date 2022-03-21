@@ -1,5 +1,5 @@
 export interface Chat {
-  text: string;
-  room: string;
   user: string;
+  text: string;
+  room?: string;
 }

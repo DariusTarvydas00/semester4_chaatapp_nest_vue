@@ -9,6 +9,7 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <SearchBar></SearchBar>
+              <router-link to="/groupChat" tag="button" class="text-amber-50">Group Chat</router-link>
             </div>
           </div>
         </div>
@@ -119,7 +120,7 @@ const navigation = [
   { name: 'Home', routerLink: '/', current: true },
   { name: 'Chat', routerLink: '/Chat', current: false },
   { name: 'Register', routerLink: '/createUser', current: false },
-  { name: 'Group Chat', href: '#', current: false },
+  { name: 'Group Chat', href: '/groupChat', current: false },
 ]
 
 function signOut() {
@@ -127,3 +128,9 @@ function signOut() {
   router.push('/')
 }
 </script>
+
+<style scoped>
+.max-w-7xl{
+  max-width: 180rem;
+}
+</style>

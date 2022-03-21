@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import WelcomePageLogin from "../views/WelcomePageLogin.vue";
 import ChatView from "../views/ChatView.vue";
 import WelcomePageRegister from "../views/WelcomePageRegister.vue";
+import GroupChat from "../views/GroupChat.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: "/welcomePageRegister",
       name: "WelcomePageRegister",
       component: WelcomePageRegister,
+    },
+    {
+      path: "/groupChat",
+      name: "GroupChat",
+      component: GroupChat,
     },
   ],
 });
